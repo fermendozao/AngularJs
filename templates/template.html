@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="Vinco" ng-controller="Orbis">
+<head>
+	<title>Directivas AngularJS - Vinco Orbis</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script type="text/javascript" src="../controllers/controller.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="../js/navegation.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/app.css">	
+</head>
+<body>
+
+	<section class="navegacion">
+			<div id="logo">
+					Erik Cruz
+			</div>
+			<div id="menu">
+					-<a href="">Home</a>
+					-<a href="">Trabajos</a>
+					-<a href="">About</a>-
+					 <a href="">GitHub</a>
+					-<a href="">Twitter</a>-
+			</div>
+	</section>
+	<section class="boxg">
+			<div id="opacity">
+			</div>
+			<div class="textobox">
+					Directivas en AngularJS
+			<div id="slogan">
+			<br><br>
+					<i>Developer Front-end / @Greatelse</i>
+			</div>
+			<div id="boton1">
+					GitHub
+			</div>
+			<div id="boton2">
+					More...
+			</div>
+			</div>
+	</section>
+
+	<section class="posts">
+			<div id="title_postss">
+				Directivas Json
+			</div>
+
+			<div id="desc_post">
+				Directivas AngularJS desde un Json
+			</div>
+			<div class="general-post">
+			<div class="postw" ng-repeat="img in imgs | limitTo: 6 ">
+
+					<div id="descapp">					
+					<div id="title_img">
+							Bienvenido {{img.title}}
+					</div>
+					<img src="{{img.url}}">
+					</div>
+					</div>
+		</section>
+</body>
+</html>
