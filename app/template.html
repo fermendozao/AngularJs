@@ -1,0 +1,17 @@
+
+
+  <section class="json-content">
+      <section class="content-post">
+        <div class="repeat" ng-repeat="pos in post | limitTo: 6">
+
+            <div id="img-post">
+              <img src="{{pos.url}}">
+            </div>
+
+            <div id="id-post">
+              {{pos.id}}
+            </div>
+
+        </div>
+      </section>
+  </section>
